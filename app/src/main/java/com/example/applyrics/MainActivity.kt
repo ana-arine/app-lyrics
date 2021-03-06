@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         Handler(
             Looper.getMainLooper()).postDelayed({
             val telaBuscarMusica =
-                Intent(this, BuscaMusicaActivity::class.java)
+                Intent(this, Activity_Tela_Fragments::class.java)
             startActivity(telaBuscarMusica)
             finish()
         }, 3000)}
