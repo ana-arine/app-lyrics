@@ -11,10 +11,10 @@ class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int) : Fragment {
         return when (position){
-            0 -> BuscarFragment()
-            1 -> LetraFragment()
-            2 -> ListaFragment()
-            else -> BuscarFragment()
+            0 -> Activity_Tela_Fragments.BuscarFragment()
+            1 -> Activity_Tela_Fragments.LetraFragment()
+            2 -> Activity_Tela_Fragments.ListaFragment()
+            else -> Activity_Tela_Fragments.BuscarFragment()
         }
     }
 
