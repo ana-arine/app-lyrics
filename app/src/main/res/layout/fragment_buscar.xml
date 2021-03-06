@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artista:"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryDark">
+
+            </TextView>
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="Digite o artista">
+            </EditText>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome da música:"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryDark">
+
+            </TextView>
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:hint="Digite a música">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gerar letra"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/branco"
+                android:background="@drawable/background_botao"
+                android:textAllCaps="false"
+                android:paddingHorizontal="15dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
