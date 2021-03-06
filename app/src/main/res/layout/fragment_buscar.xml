@@ -29,9 +29,11 @@
 
             </TextView>
 
-            <EditText android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:hint="Digite o artista">
+            <EditText
+                    android:id="@+id/edtBanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite o artista">
             </EditText>
 
             <TextView
@@ -43,15 +45,18 @@
 
             </TextView>
 
-            <EditText android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:hint="Digite a música">
+            <EditText
+                    android:id="@+id/edtMusica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite a música">
 
             </EditText>
 
         </LinearLayout>
 
         <Button
+                android:id="@+id/btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gerar letra"
