@@ -2,8 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent">
 
     <LinearLayout
             android:orientation="vertical"
@@ -16,58 +15,57 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="60dp"
                 android:orientation="vertical"
-                android:gravity="start"
+                android:textAlignment="textStart"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="15dp">
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Artista:"
-                    android:textSize="20dp"
+                    android:text="@string/artista"
+                    android:textSize="20sp"
                     android:textColor="@color/colorPrimaryDark">
-
             </TextView>
 
             <EditText
                     android:id="@+id/edtBanda"
-                    android:layout_width="wrap_content"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Digite o artista">
+                    android:hint="Digite o artista"
+                    android:layout_marginBottom="30dp">
             </EditText>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nome da música:"
-                    android:textSize="20dp"
+                    android:text="@string/nome_da_musica"
+                    android:textSize="20sp"
                     android:textColor="@color/colorPrimaryDark">
-
             </TextView>
 
             <EditText
                     android:id="@+id/edtMusica"
-                    android:layout_width="wrap_content"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Digite a música">
-
+                    android:hint="Digite a música"
+                    android:layout_marginBottom="30dp">
             </EditText>
 
         </LinearLayout>
 
         <Button
+                android:textAlignment="center"
                 android:id="@+id/btn"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Gerar letra"
+                android:text="@string/gerar_letra"
+                android:textSize="20sp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/branco"
                 android:background="@drawable/background_botao"
                 android:textAllCaps="false"
                 android:paddingHorizontal="15dp">
-
         </Button>
-
 
     </LinearLayout>
 

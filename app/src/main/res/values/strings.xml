@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">App Lyrics</string>
     <string name="best_lyrics">Best Lyrics</string>
+    <string name="artista">Artista:</string>
+    <string name="nome_da_musica">Nome da música:</string>
+    <string name="gerar_letra">Gerar letra</string>
+    <string name="titulo_app">Best Lyrics</string>
 </resources>

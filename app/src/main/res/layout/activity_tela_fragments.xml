@@ -16,29 +16,26 @@
 
         <TextView
                 android:id="@+id/txtTitulo"
+                android:background="@color/nomeApp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Best Lyrics"
-                android:textColor="@color/nomeApp"
+                android:text="@string/best_lyrics"
+                android:textColor="#FFFFFF"
                 android:fontFamily="cursive"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 android:paddingTop="15dp"
-                android:paddingStart="15dp"
-                android:layout_marginBottom="15dp">
-
+                android:paddingStart="15dp">
         </TextView>
 
         <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@color/nomeApp"
-                android:layout_marginBottom="35.5dp"
                 app:tabBackground="@color/nomeApp"
                 app:tabTextColor="@color/branco"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
-
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager.widget.ViewPager
@@ -51,7 +48,5 @@
                 app:layout_constraintTop_toBottomOf="@id/layout"/>
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
