@@ -49,6 +49,9 @@ class Activity_Tela_Fragments : AppCompatActivity() {
                 val nomebanda = banda.text.toString()
                 val nomemusica = musica.text.toString()
                 if (nomebanda.isNotEmpty() && nomemusica.isNotEmpty()) {
+                    val bandaemusica: MutableList<String> = mutableListOf()
+                    bandaemusica.add(nomebanda)
+                    bandaemusica.add(nomemusica)
 //                    val bundle = Bundle()
 //                    bundle.putString("BANDA", nomebanda)
 //                    bundle.putString("MUSICA", nomemusica)
@@ -58,7 +61,7 @@ class Activity_Tela_Fragments : AppCompatActivity() {
                     // compartilhar dados com a próxima fragment
 //                    model!!.msgCommunicator(nomemusica) // dp Communicator
 //                    model!!.msgCommunicator(nomebanda) // dp Communicator
-                    model!!.msgCommunicator(nomebanda,nomemusica) // dp Communicator
+                    model!!.msgCommunicator(bandaemusica) // dp Communicator
 
                     // iniciar a tab e fragment "Letra"
                     val proximaTab = requireActivity().findViewById<ViewPager>(R.id.viewPager)
@@ -144,11 +147,14 @@ class Activity_Tela_Fragments : AppCompatActivity() {
 //            })
 //            buscarMusica(bandaRecebida, musicaRecebida)
 
-            model.mensagem.observe(this, object : Observer<Any?> {  // dp Communicator
-                override fun onChanged(o: Any?) {
+            model.mensagem.observe(this, object : Observer<MutableList<String>> {  // dp Communicator
+
+                override fun onChanged(t: MutableList<String>) {
                     var bandaRecebida: String
-                    bandaRecebida = o.toString()
-                    buscarMusica(bandaRecebida,"Clocks")
+                    var musicaRecebida: String
+                    bandaRecebida = t[0]
+                    musicaRecebida = t[1]
+                    buscarMusica(bandaRecebida,musicaRecebida)
                 }
             })
         }
