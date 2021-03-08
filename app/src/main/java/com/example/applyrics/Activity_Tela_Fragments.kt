@@ -52,6 +52,10 @@ class Activity_Tela_Fragments : AppCompatActivity() {
                     val bandaemusica: MutableList<String> = mutableListOf()
                     bandaemusica.add(nomebanda)
                     bandaemusica.add(nomemusica)
+                    banda.setText("")
+                    musica.setText("")
+                    banda.requestFocus()
+
 //                    val bundle = Bundle()
 //                    bundle.putString("BANDA", nomebanda)
 //                    bundle.putString("MUSICA", nomemusica)
