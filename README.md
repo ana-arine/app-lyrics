@@ -9,3 +9,6 @@
 - [X] Buscar Artista e Música
 - [X] Gerar Letra
 - [ ] Histórico de Busca
+
+### App
+<img alt="Gif App Best Lyrics" src="https://media.giphy.com/media/XICoN7oXx9KoG5OaKs/giphy.gif" />
