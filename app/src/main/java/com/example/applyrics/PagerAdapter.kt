@@ -6,14 +6,14 @@ import androidx.fragment.app.FragmentPagerAdapter
 
 class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
-        return 3
+        return 2
     }
 
     override fun getItem(position: Int) : Fragment {
         return when (position){
             0 -> Activity_Tela_Fragments.BuscarFragment()
             1 -> Activity_Tela_Fragments.LetraFragment()
-            2 -> Activity_Tela_Fragments.ListaFragment()
+//            2 -> Activity_Tela_Fragments.ListaFragment()
             else -> Activity_Tela_Fragments.BuscarFragment()
         }
     }
@@ -22,7 +22,7 @@ class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         return when(position){
             0 -> "Buscar"
             1 -> "Letra"
-            2 -> "Lista de Letras"
+//            2 -> "Lista de Letras"
             else -> super.getPageTitle(position)
         }
     }
