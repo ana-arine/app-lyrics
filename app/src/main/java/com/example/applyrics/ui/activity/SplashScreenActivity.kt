@@ -1,12 +1,13 @@
-package com.example.applyrics
+package com.example.applyrics.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.applyrics.R
 
-class MainActivity : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         Handler(
             Looper.getMainLooper()).postDelayed({
             val telaBuscarMusica =
-                Intent(this, Activity_Tela_Fragments::class.java)
+                Intent(this, MainActivity::class.java)
             startActivity(telaBuscarMusica)
             finish()
         }, 3000)}

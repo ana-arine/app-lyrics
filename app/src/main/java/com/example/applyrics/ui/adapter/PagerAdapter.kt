@@ -1,8 +1,10 @@
-package com.example.applyrics
+package com.example.applyrics.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.applyrics.ui.fragment.BuscarMusicasFragment
+import com.example.applyrics.ui.fragment.LetraMusicasFragment
 
 class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
@@ -11,10 +13,10 @@ class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int) : Fragment {
         return when (position){
-            0 -> Activity_Tela_Fragments.BuscarFragment()
-            1 -> Activity_Tela_Fragments.LetraFragment()
+            0 -> BuscarMusicasFragment()
+            1 -> LetraMusicasFragment()
 //            2 -> Activity_Tela_Fragments.ListaFragment()
-            else -> Activity_Tela_Fragments.BuscarFragment()
+            else -> BuscarMusicasFragment()
         }
     }
 

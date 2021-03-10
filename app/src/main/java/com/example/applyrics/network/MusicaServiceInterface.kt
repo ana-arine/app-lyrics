@@ -1,11 +1,11 @@
-package com.example.applyrics
+package com.example.applyrics.network
 
 import com.example.applyrics.model.Musica
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface MusicaService {
+interface MusicaServiceInterface {
     @GET("{banda}/{musica}/")
 
     fun buscarMusica(

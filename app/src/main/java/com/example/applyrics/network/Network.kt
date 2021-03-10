@@ -1,4 +1,4 @@
-package com.example.applyrics
+package com.example.applyrics.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
